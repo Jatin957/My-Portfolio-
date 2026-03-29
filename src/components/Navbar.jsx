@@ -27,20 +27,20 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-
+    <div className="fixed top-3 md:top-6 left-1/2 -translate-x-1/2 z-50 w-full flex justify-center px-2">
       <motion.nav
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="flex items-center gap-6 px-4 py-3 
-        bg-white/5 backdrop-blur-lg border border-white/10 
-          rounded-full shadow-lg hover:shadow-sky-400/20
-          overflow-x-auto scrollbar-hide max-w-[95vw]"
+        className="flex items-center gap-4 md:gap-6 px-4 py-2 md:py-3 
+bg-white/5 backdrop-blur-lg border border-white/10 
+rounded-full shadow-lg hover:shadow-sky-400/20
+overflow-x-auto scrollbar-hide max-w-full"
       >
 
         {/* 🔥 Logo ONLY */}
         <motion.div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="w-9 h-9 bg-gradient-to-r from-sky-400 to-blue-500 
         text-black flex items-center justify-center rounded-full font-bold cursor-pointer"
           whileHover={{ rotate: 360, scale: 1.1 }}
@@ -50,8 +50,7 @@ function Navbar() {
         </motion.div>
 
         {/* 🔥 Menu */}
-        <div className="flex items-center gap-4 text-xs md:text-sm whitespace-nowrap">
-
+        <div className="flex items-center gap-3 md:gap-4 text-[10px] sm:text-xs md:text-sm whitespace-nowrap">
           {["About", "Skills", "Projects", "Experience", "Education", "Contact"].map((item) => {
             const id = item.toLowerCase();
 

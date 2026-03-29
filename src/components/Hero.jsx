@@ -23,7 +23,7 @@ function Hero() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"
+      className="relative min-h-screen pt-28 md:pt-0 flex items-center justify-center px-6 overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"
     >
       <Background />
 
@@ -32,8 +32,7 @@ function Hero() {
       <div className="absolute w-[500px] h-[500px] bg-blue-600 opacity-20 rounded-full blur-3xl bottom-[-100px] right-[-100px] animate-pulse"></div>
 
       {/* 🔥 Content */}
-      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl z-10 gap-12">
-
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl z-10 gap-10 md:gap-12">
         {/* LEFT TEXT */}
         <motion.div
           className="text-center md:text-left"
@@ -41,7 +40,7 @@ function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-tight">
             Hi, I'm <span className="text-sky-400">Jatin</span> 👋
           </h1>
 
@@ -49,13 +48,13 @@ function Hero() {
             Full Stack Developer
           </h2>
 
-          <p className="text-gray-300 max-w-md mb-6">
+          <p className="text-sm sm:text-base text-gray-300 max-w-md mb-6">
             Building scalable applications and exploring AI-driven solutions.
             Passionate about clean architecture, performance, and innovation.
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-4 justify-center md:justify-start">
+         <div className="flex flex-wrap gap-3 justify-center md:justify-start">
 
             {/* View Work */}
             <a href="#projects">
