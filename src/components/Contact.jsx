@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 
 function Contact() {
@@ -35,7 +35,7 @@ function Contact() {
 
                         <a
                             href="https://github.com/jatin957"
-                            target="_blank"
+                            target="_blank" rel="noopener noreferrer"
                             className="flex items-center gap-3 hover:text-sky-400 transition"
                         >
                             <FaGithub />
@@ -44,7 +44,7 @@ function Contact() {
 
                         <a
                             href="https://linkedin.com/in/jatin957"
-                            target="_blank"
+                            target="_blank" rel="noopener noreferrer"
                             className="flex items-center gap-3 hover:text-sky-400 transition"
                         >
                             <FaLinkedin />

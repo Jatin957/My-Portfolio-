@@ -77,11 +77,11 @@ function Navbar() {
         {/* 🔥 Social Icons */}
         <div className="flex gap-3 text-gray-300 text-lg">
 
-          <a href="https://github.com/jatin957" target="_blank">
+          <a href="https://github.com/jatin957" target="_blank" rel="noopener noreferrer">
             <FaGithub className="hover:text-sky-400 hover:scale-110 transition cursor-pointer" />
           </a>
 
-          <a href="https://linkedin.com" target="_blank">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="hover:text-sky-400 hover:scale-110 transition cursor-pointer" />
           </a>
 
